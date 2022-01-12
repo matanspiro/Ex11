@@ -22,7 +22,6 @@ def get_user(num):
 @app.route('/')
 @app.route('/assignment11/outer_source')
 def assignment11_outer_source_func():
-    num = 1
     if "number_backend" in request.args:
         num = int(request.args['number_backend'])
         user = get_user(num)
